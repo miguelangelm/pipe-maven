@@ -10,7 +10,7 @@ stages{
     echo 'Building..'
     echo "PATH=${PATH}"
     echo "MAVEN=${M2_HOME}"
-    sh 'mvn clean'
+    sh 'mvn clean install'
     }
   }
   stage('Test'){
